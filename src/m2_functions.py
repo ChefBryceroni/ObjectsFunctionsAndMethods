@@ -34,10 +34,11 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
+    turtle5()
     turtle3()
     turtle2()
     turtle2()
-    turtle4()
 
     window.close_on_mouse_click()
 
@@ -115,6 +116,21 @@ def turtle4():
     billy.forward(100)
     billy.pen_down()
     billy.draw_regular_polygon(7, 45)
+
+def turtle5():
+
+    joe = rg.SimpleTurtle('turtle')
+    joe.pen = rg.Pen('navy', 5)
+
+    matt = rg.SimpleTurtle('turtle')
+    matt.pen = rg.Pen('black', 6)
+
+    joe.backward(40)
+    joe.right(50)
+    joe.forward(100)
+
+    matt.right(20)
+    matt.forward(100)
 ########################################################################
 #
 # done: 2.
@@ -179,7 +195,7 @@ def turtle4():
 
 ########################################################################
 #
-# TODO: 4.
+# done: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -195,7 +211,7 @@ def turtle4():
 
 ########################################################################
 #
-# TODO: 5.
+# done: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
