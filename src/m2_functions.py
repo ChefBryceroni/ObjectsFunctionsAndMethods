@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Bryce Nesius.
 """
 
 ########################################################################
 #
-# TODO: 1. PUT YOUR NAME IN THE ABOVE LINE and...
+# Done: 1. PUT YOUR NAME IN THE ABOVE LINE and...
 #
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
@@ -37,6 +37,7 @@ def main():
     turtle3()
     turtle2()
     turtle2()
+    turtle4()
 
     window.close_on_mouse_click()
 
@@ -102,10 +103,21 @@ def turtle3():
     maja.draw_circle(50)
     maja.end_fill()
 
+def turtle4():
 
+    billy = rg.SimpleTurtle()
+    billy.pen = rg.Pen('pink', 4)
+
+    billy.draw_circle(50)
+
+    billy.pen_up()
+    billy.right(45)
+    billy.forward(100)
+    billy.pen_down()
+    billy.draw_regular_polygon(7, 45)
 ########################################################################
 #
-# TODO: 2.
+# done: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -137,7 +149,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# done: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
